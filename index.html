@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jango-fx</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        /*
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto Slab', serif;
+        */
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background: linear-gradient(12deg, rgba(97, 207, 255, 1) 0%, rgba(212, 251, 255, 1) 100%);
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        #sup {
+            position: absolute;
+            top: 33%;
+            width: 100%;
+            font-size: 1em;
+            text-align: center;
+            background-color: rgba(41, 173, 235, 0.5);
+            color: transparent;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+        }
+
+        sub {
+            position: relative;
+            top: -0.1em;
+        }
+
+        #sub {
+            font-size: 0.1125em;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: transparent;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+        }
+
+        #logo a {
+            position: absolute;
+            top: 2%;
+            right: 2.5%;
+            font-size: 0.1em;
+            color: lightgreen;
+            text-decoration: none;
+        }
+    </style>
+    <script
+        type="text/javascript"> function setMaxHeight() { document.getElementsByTagName("body")[0].style["font-size"] = window.innerHeight * (220 / 900) + "px"; }</script>
+</head>
+
+<body onload="setMaxHeight();" onresize="setMaxHeight();">
+    <div id="logo"><a href="">🙃</a></div>
+    <div id="sup">
+        <div>ƒ<sub>(x)</sub></div>
+        <div id="sub"></div>
+    </div>
+</body>
+
+</html>
